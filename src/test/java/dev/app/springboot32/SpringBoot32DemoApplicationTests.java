@@ -1,10 +1,10 @@
-package dev.app.logging;
+package dev.app.springboot32;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AppSpringBootLoggingApplicationTests {
+class SpringBoot32DemoApplicationTests {
 
   @Test
   void contextLoads() {
