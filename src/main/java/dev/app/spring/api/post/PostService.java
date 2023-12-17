@@ -1,6 +1,5 @@
-package dev.app.springboot32.post;
+package dev.app.spring.api.post;
 
-import dev.app.springboot32.post.Post;
 import java.util.Collection;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

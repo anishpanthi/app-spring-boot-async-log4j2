@@ -1,4 +1,4 @@
-package dev.app.springboot32;
+package dev.app.spring.api;
 
 import java.util.Map;
 import lombok.extern.log4j.Log4j2;

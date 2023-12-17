@@ -1,4 +1,4 @@
-package dev.app.springboot32.user;
+package dev.app.spring.api.user;
 
 import io.micrometer.observation.annotation.Observed;
 import java.util.Collection;

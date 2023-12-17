@@ -1,4 +1,4 @@
-package dev.app.springboot32;
+package dev.app.spring.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

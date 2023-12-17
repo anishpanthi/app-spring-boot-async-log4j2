@@ -1,4 +1,4 @@
-package dev.app.springboot32;
+package dev.app.spring.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

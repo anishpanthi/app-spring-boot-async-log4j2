@@ -1,4 +1,4 @@
-package dev.app.springboot32.post;
+package dev.app.spring.api.post;
 
 import io.micrometer.observation.annotation.Observed;
 import java.util.Collection;

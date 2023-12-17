@@ -1,4 +1,4 @@
-package dev.app.springboot32.user;
+package dev.app.spring.api.user;
 
 import java.util.Collection;
 import lombok.RequiredArgsConstructor;
