@@ -13,7 +13,7 @@ public interface MemberService {
    * @param id - Member Id
    * @return - Member
    */
-  Member getMemberById(int id);
+  Member getMemberById(Long id);
 
   /**
    * Add member
@@ -36,7 +36,7 @@ public interface MemberService {
    *
    * @param id - Member Id
    */
-  void deleteMember(int id);
+  void deleteMember(Long id);
 
   /**
    * Get all members

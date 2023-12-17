@@ -9,34 +9,34 @@ import org.springframework.stereotype.Service;
  * @author Anish Panthi
  */
 @Service
-@RequiredArgsConstructor
 @Log4j2
-public class MemberServiceImpl implements MemberService{
+@RequiredArgsConstructor
+public class MemberServiceImpl implements MemberService {
 
   private final MemberDao memberDao;
 
   @Override
-  public Member getMemberById(int id) {
-    return null;
+  public Member getMemberById(Long id) {
+    return memberDao.getMemberById(id);
   }
 
   @Override
   public Member addMember(Member member) {
-    return null;
+    return memberDao.addMember(member);
   }
 
   @Override
   public Member updateMember(Member member) {
-    return null;
+    return memberDao.updateMember(member);
   }
 
   @Override
-  public void deleteMember(int id) {
-
+  public void deleteMember(Long id) {
+    memberDao.deleteMember(id);
   }
 
   @Override
   public List<Member> findAll() {
-    return null;
+    return memberDao.findAll();
   }
 }
