@@ -18,13 +18,12 @@ public class SecurityConfig {
 
   @Bean
   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-
-    http.csrf(AbstractHttpConfigurer::disable)
+//    return http.csrf(AbstractHttpConfigurer::disable)
+    return http.csrf(rf -> rf.ignoringRequestMatchers("/zipkin/**"))
         .authorizeHttpRequests(r ->
-            r.requestMatchers("/actuator/**").permitAll().anyRequest().authenticated());
-
-    http.oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()));
-    http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
-    return http.build();
+            r.requestMatchers("/actuator/**", "/zipkin/**").permitAll().anyRequest().authenticated())
+        .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()))
+        .sessionManagement(
+            session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).build();
   }
 }
